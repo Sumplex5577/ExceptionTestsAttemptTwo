@@ -1,5 +1,7 @@
 package com.company;
 
+import java.io.EOFException;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class Main {
@@ -745,13 +747,20 @@ public class Main {
 //    public static void f() throws Exception {
 //    }
 //}
-    public static void main(String[] args) {
-        f();
-    }
-    public static void f() throws RuntimeException {
+// 76   public static void main(String[] args) {
+//        f();
+//    }
+//    public static void f() throws RuntimeException {
+//    }
+//}
+    public static void main(String[] args) throws EOFException, FileNotFoundException {
+        if (System.currentTimeMillis() % 2 == 0) {
+            throw new EOFException();
+        } else {
+            throw new FileNotFoundException();
+        }
     }
 }
-
 
 
 
