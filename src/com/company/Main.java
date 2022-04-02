@@ -73,10 +73,18 @@ public class Main {
 //    }
 //}
 //
+// 17  public static double sqr(double arg) {
+//        if (System.currentTimeMillis() % 2 == 0) {
+//            return arg * arg; // если currentTimeMillis() - четное число, то все ОК
+//        }
+//        // а если нечетное, что нам возвращать?
+//    }
+//}
+    public static void main(String[] args) {
+        double d = sqr(10.0); // ну, и чему равно d?
+        System.out.println(d);
+    }
     public static double sqr(double arg) {
-        if (System.currentTimeMillis() % 2 == 0) {
-            return arg * arg; // если currentTimeMillis() - четное число, то все ОК
-        }
-        // а если нечетное, что нам возвращать?
+        // nothing
     }
 }
