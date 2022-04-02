@@ -17,8 +17,12 @@ public class Main {
 //    throw new Error();
 //}
 //}
+//public static void main(String[] args) {
+//    throw new String("Hello!");
+//}
+//}
 public static void main(String[] args) {
-    throw new String("Hello!");
+    throw null;
 }
 }
 
