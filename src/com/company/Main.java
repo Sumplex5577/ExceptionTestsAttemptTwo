@@ -166,11 +166,39 @@ public class Main {
 //        }
 //        return width * height;
 //    }
-    public static void main(String[] args) {
-        // Пример: ОПЕРАТОР ПОСЛЕДОВАТЕЛЬНОСТИ
-        int x = 42;    // первый шаг
-        int y = x * x; // второй шаг
-        x = x * y;     // третий шаг
+//30    public static void main(String[] args) {
+//        // Пример: ОПЕРАТОР ПОСЛЕДОВАТЕЛЬНОСТИ
+//        int x = 42;    // первый шаг
+//        int y = x * x; // второй шаг
+//        x = x * y;     // третий шаг
+//
+//    }
+//}
 
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
