@@ -707,7 +707,10 @@ public class Main {
 //        } finally {}
 //    }
 //}
-
+    public static void main(String[] args) {
+        throw new Exception(); // тут ошибка компиляции
+    }
+}
 
 
 
