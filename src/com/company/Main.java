@@ -2,7 +2,7 @@ package com.company;
 
 public class Main {
 
-//1 public static void main(String[] args) throws Throwable {
+    //1    public static void main(String[] args) throws Throwable {
 //2  public static void main(String[] args) throws String {
 //3 public static void main(String[] args) {
 //3   try {
@@ -46,10 +46,30 @@ public class Main {
 //    throw new Error();
 //}
 //}
-public static void main(String[] args) {
-    System.err.println("sout");
-    throw new Error();
+//11public static void main(String[] args) {
+//    System.err.println("sout");
+//    throw new Error();
+//}
+//}
+//12public double sqr( double arg){ // надо double
+//    return arg * arg;           // double * double - это double
+//        }
+//    }
+//13public double sqr(double arg) { // надо double
+//    int k = 1;                  // есть int
+//    return k;                   // можно неявно преобразовать int в double
+//}
+//}
+//14public double sqr(double arg) { // надо double
+//    int k = 1;                  // есть int
+//    return (double) k;          // явное преобразование int в double
+//}
+//}
+//15public static double sqr(double arg) {
+//    return "hello!";
+//}
+//}
+    public static double sqr(double arg) {
+    }
 }
-}
-
 
