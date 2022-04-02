@@ -448,10 +448,52 @@ public class Main {
 //        System.err.println(" 4");
 //    }
 //}
+// 45   public static void main(String[] args) {
+//        try {
+//        } catch (Exception e) {
+//        } catch (RuntimeException e) {
+//        }
+//    }
+//}
+// 46   public static void main(String[] args) {
+//        try {
+//        } catch (Error e) {
+//        } catch (RuntimeException e) {
+//        }
+//    }
+//}
+// 47   public static void main(String[] args) {
+//        try {
+//            throw new Exception();
+//        } catch (RuntimeException e) {
+//            System.err.println("catch RuntimeException");
+//        } catch (Exception e) {
+//            System.err.println("catch Exception");
+//        } catch (Throwable e) {
+//            System.err.println("catch Throwable");
+//        }
+//        System.err.println("next statement");
+//    }
+//}
+// 48    public static void main(String[] args) {
+//        try {
+//            Throwable t = new Exception(); // ссылка типа Throwable указывает на объект типа Exception
+//            throw t;
+//        } catch (RuntimeException e) {
+//            System.err.println("catch RuntimeException");
+//        } catch (Exception e) {
+//            System.err.println("catch Exception");
+//        } catch (Throwable e) {
+//            System.err.println("catch Throwable");
+//        }
+//        System.err.println("next statement");
+//    }
+//}
     public static void main(String[] args) {
         try {
-        } catch (Exception e) {
-        } catch (RuntimeException e) {
+            System.err.println("try");
+        } finally {
+            System.err.println("finally");
         }
     }
 }
