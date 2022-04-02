@@ -772,19 +772,111 @@ public class Main {
 //    }
 //}
 //
-    public static void main(String[] args) throws IOException {
-        if (System.currentTimeMillis() % 2 == 0) {
-            throw new EOFException();
-        } else {
-            throw new FileNotFoundException();
+// 79   public static void main(String[] args) throws IOException {
+//        if (System.currentTimeMillis() % 2 == 0) {
+//            throw new EOFException();
+//        } else {
+//            throw new FileNotFoundException();
+//        }
+//    }
+//}
+// 80   public static void main(String[] args) throws IOException {
+//        f0();
+//        f1();
+//    }
+//    public static void f0() throws EOFException {...}
+//    public static void f1() throws FileNotFoundException {...}
+//}
+//
+//
+// 81   public static void main(String[] args) throws IOException, InterruptedException {
+//        f0();
+//        f1();
+//        f2();
+//    }
+//    public static void f0() throws EOFException {...}
+//    public static void f1() throws FileNotFoundException {...}
+//    public static void f2() throws InterruptedException {...}
+//}
+// 82   public static void main(String[] args) {
+//        try {
+//            throw new Exception();
+//        } catch (Exception e) {
+//            // ...
+//        }
+//    }
+//}
+//  83  public static void main(String[] args) {
+//        try {
+//            throw new Exception();
+//        } catch (Throwable e) {
+//            // ...
+//        }
+//    }
+//}
+// 84   public static void main(String[] args) {
+//        try {
+//            throw new Throwable();
+//        } catch (Exception e) {
+//            // ...
+//        }
+//    }
+//}
+//  85  public static void main(String[] args) {
+//        try {
+//            throw new Exception();
+//        } catch (Error e) {
+//            // ...
+//        }
+//    }
+//}
+// 86   public static void main(String[] args) throws FileNotFoundException {
+//        try {
+//            if (System.currentTimeMillis() % 2 == 0) {
+//                throw new EOFException();
+//            } else {
+//                throw new FileNotFoundException();
+//            }
+//        } catch (EOFException e) {
+//            // ...
+//        }
+//    }
+//}
+//  87  public static void main(String[] args) throws Exception {
+//        Throwable t = new Exception(); // и лететь будет Exception
+//        throw t; // но тут ошибка компиляции
+//    }
+//}
+//  88  public static void main(String[] args) throws Exception {
+//        Object ref = "Hello!";  // ref указывает на строку
+//        char c = ref.charAt(0); // но тут ошибка компиляции
+//    }
+//}
+//  89  public static void f0(Throwable t) throws Exception {
+//        throw t;
+//    }
+//    public static void f1(Object ref){
+//        char c = ref.charAt(0);
+//    }
+//}
+//  90  public static void main(String[] args) throws Exception {
+//        try {
+//            Throwable t = new Exception(); // и лететь будет Exception
+//            throw t; // но тут ошибка компиляции
+//        } catch (Exception e) {
+//            System.out.println("Перехвачено!");
+//        }
+//    }
+//}
+    public static void main(String[] args) throws Throwable {
+        try {
+            Throwable t = new Exception(); // а лететь будет Exception
+            throw t;
+        } catch (Exception e) { // и мы перехватим Exception
+            System.out.println("Перехвачено!");
         }
     }
 }
-
-
-
-
-
 
 
 
