@@ -505,7 +505,30 @@ public class Main {
 //        }
 //    }
 //}
-
+// 51   public static void main(String[] args) {
+//        try {
+//            return;
+//        } finally {
+//            System.err.println("finally");
+//        }
+//    }
+//}
+// 52   public static void main(String[] args) {
+//        try {
+//            System.exit(42);
+//        } finally {
+//            System.err.println("finally");
+//        }
+//    }
+//}
+// 53   public static void main(String[] args) {
+//        try {
+//            Runtime.getRuntime().exit(42);
+//        } finally {
+//            System.err.println("finally");
+//        }
+//    }
+//}
 
 
 
