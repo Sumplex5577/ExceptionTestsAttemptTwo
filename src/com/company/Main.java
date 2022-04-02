@@ -737,12 +737,18 @@ public class Main {
 //    public static void f() throws Exception {
 //    }
 //}
-    // они пугают целым Throwable
-    public static void main(String[] args) throws Throwable {
+//75    // они пугают целым Throwable
+//    public static void main(String[] args) throws Throwable {
+//        f();
+//    }
+//    // хотя мы пугали всего-лишь Exception
+//    public static void f() throws Exception {
+//    }
+//}
+    public static void main(String[] args) {
         f();
     }
-    // хотя мы пугали всего-лишь Exception
-    public static void f() throws Exception {
+    public static void f() throws RuntimeException {
     }
 }
 
