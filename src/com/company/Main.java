@@ -30,16 +30,21 @@ public class Main {
 //    throw ref;               // "бросаем" его
 //}
 //}
+//9public static void main(String[] args) {
+//    f(null);
+//}
+//    public static void f(NullPointerException e) {
+//        try {
+//            throw e;
+//        } catch (NullPointerException npe) {
+//            f(npe);
+//        }
+//    }
+//}
 public static void main(String[] args) {
-    f(null);
+    System.out.println("sout");
+    throw new Error();
 }
-    public static void f(NullPointerException e) {
-        try {
-            throw e;
-        } catch (NullPointerException npe) {
-            f(npe);
-        }
-    }
 }
 
 
