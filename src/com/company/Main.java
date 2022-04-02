@@ -12,17 +12,22 @@ public class Main {
 //4 } catch (String s) {}
 //4    }
 //4}
-//public static void main(String[] args) {
+//5public static void main(String[] args) {
 //    // Error - потомок Throwable
 //    throw new Error();
 //}
 //}
-//public static void main(String[] args) {
+//6public static void main(String[] args) {
 //    throw new String("Hello!");
 //}
 //}
+//7public static void main(String[] args) {
+//    throw null;
+//}
+//}
 public static void main(String[] args) {
-    throw null;
+    Error ref = new Error(); // создаем экземпляр
+    throw ref;               // "бросаем" его
 }
 }
 
