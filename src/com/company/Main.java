@@ -753,7 +753,26 @@ public class Main {
 //    public static void f() throws RuntimeException {
 //    }
 //}
-    public static void main(String[] args) throws EOFException, FileNotFoundException {
+// 77   public static void main(String[] args) throws EOFException, FileNotFoundException {
+//        if (System.currentTimeMillis() % 2 == 0) {
+//            throw new EOFException();
+//        } else {
+//            throw new FileNotFoundException();
+//        }
+//    }
+//}
+//    // пугаем ОБОИМИ исключениями
+//  78  public static void main(String[] args) throws EOFException, FileNotFoundException {
+//        f0();
+//        f1();
+//    }
+//
+//    public static void f0() throws EOFException {
+//        public static void f1 () throws FileNotFoundException
+//    }
+//}
+//
+    public static void main(String[] args) throws IOException {
         if (System.currentTimeMillis() % 2 == 0) {
             throw new EOFException();
         } else {
@@ -761,7 +780,6 @@ public class Main {
         }
     }
 }
-
 
 
 
