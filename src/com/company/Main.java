@@ -141,4 +141,28 @@ public class Main {
 //            return width * height;
 //        }
 //    }
-
+//26    public static int area(int width, int height) {
+//        if (width < 0 || height < 0) {
+//            System.out.println("Bad ...");
+//        }
+//        return width * height;
+//    }
+//27    public static int area(int width, int height) {
+//        if (width < 0 || height < 0) {
+//            return -1; // специальное "неправильное" значение площади
+//        }
+//        return width * height;
+//    }
+//28    public static int area(int width, int height) {
+//        if (width < 0 || height < 0) {
+//            System.exit(0);
+//        }
+//        return width * height;
+//    }
+//}
+//29    public static int area(int width, int height) {
+//        if (width < 0 || height < 0) {
+//            throw new IllegalArgumentException("Negative sizes: w = " + width + ", h = " + height);
+//        }
+//        return width * height;
+//    }
