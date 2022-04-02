@@ -41,8 +41,13 @@ public class Main {
 //        }
 //    }
 //}
+//10public static void main(String[] args) {
+//    System.out.println("sout");
+//    throw new Error();
+//}
+//}
 public static void main(String[] args) {
-    System.out.println("sout");
+    System.err.println("sout");
     throw new Error();
 }
 }
