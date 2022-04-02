@@ -378,6 +378,83 @@ public class Main {
 //        System.err.print(" 3");
 //    }
 //}
+//40    public static void main(String[] args) {
+//        try {
+//            System.err.print(" 0");
+//            if (true) {throw new Error();}
+//            System.err.print(" 1");
+//        } catch (Exception e) {
+//            System.err.print(" 2");
+//        }
+//        System.err.print(" 3");
+//    }
+//}
+// 41   public static void main(String[] args) {
+//        try {
+//            System.err.print(" 0");
+//            if (true) {throw new RuntimeException();}
+//            System.err.print(" 1");
+//        } catch (RuntimeException e) {     // перехватили RuntimeException
+//            System.err.print(" 2");
+//            if (true) {throw new Error();} // но бросили Error
+//        }
+//        System.err.println(" 3");          // пропускаем - уже летит Error
+//    }
+//}
+//42    public static void main(String[] args) {
+//        try {
+//            System.err.print(" 0");
+//            if (true) {throw new RuntimeException();}
+//            System.err.print(" 1");
+//        } catch (RuntimeException e) { // перехватили RuntimeException
+//            System.err.print(" 2");
+//            if (true) {throw e;}       // и бросили ВТОРОЙ раз ЕГО ЖЕ
+//        }
+//        System.err.println(" 3");      // пропускаем - опять летит RuntimeException
+//    }
+//}
+// 43   public static void main(String[] args) {
+//        try {
+//            System.err.print(" 0");
+//            if (true) {throw new RuntimeException();}
+//            System.err.print(" 1");
+//        } catch (RuntimeException e) {     // перехватили RuntimeException
+//            System.err.print(" 2");
+//            if (true) {throw new Error();} // и бросили новый Error
+//        } catch (Error e) { // хотя есть cath по Error "ниже", но мы в него не попадаем
+//            System.err.print(" 3");
+//        }
+//        System.err.println(" 4");
+//    }
+//}
+// 44   public static void main(String[] args) {
+//        try {
+//            System.err.print(" 0");
+//            if (true) {throw new RuntimeException();}
+//            System.err.print(" 1");
+//        } catch (RuntimeException e) { // перехватили RuntimeException
+//            System.err.print(" 2.1");
+//            try {
+//                System.err.print(" 2.2");
+//                if (true) {throw new Error();} // и бросили новый Error
+//                System.err.print(" 2.3");
+//            } catch (Throwable t) {            // перехватили Error
+//                System.err.print(" 2.4");
+//            }
+//            System.err.print(" 2.5");
+//        } catch (Error e) { // хотя есть cath по Error "ниже", но мы в него не попадаем
+//            System.err.print(" 3");
+//        }
+//        System.err.println(" 4");
+//    }
+//}
+    public static void main(String[] args) {
+        try {
+        } catch (Exception e) {
+        } catch (RuntimeException e) {
+        }
+    }
+}
 
 
 
