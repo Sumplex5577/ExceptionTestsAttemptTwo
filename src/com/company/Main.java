@@ -12,9 +12,14 @@ public class Main {
 //4 } catch (String s) {}
 //4    }
 //4}
+//public static void main(String[] args) {
+//    // Error - потомок Throwable
+//    throw new Error();
+//}
+//}
 public static void main(String[] args) {
-    // Error - потомок Throwable
-    throw new Error();
+    throw new String("Hello!");
 }
 }
+
 
