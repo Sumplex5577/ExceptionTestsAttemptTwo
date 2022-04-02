@@ -1,5 +1,7 @@
 package com.company;
 
+import java.io.IOException;
+
 public class Main {
     //1    public static void main(String[] args) throws Throwable {
 //2  public static void main(String[] args) throws String {
@@ -707,10 +709,19 @@ public class Main {
 //        } finally {}
 //    }
 //}
-    public static void main(String[] args) {
-        throw new Exception(); // тут ошибка компиляции
+// 69   public static void main(String[] args) {
+//        throw new Exception(); // тут ошибка компиляции
+//    }
+//}
+// 70   public static void main(String[] args) throws IOException {
+//        throw new Exception(); // тут ошибка компиляции
+//    }
+//}
+    public static void main(String[] args) throws Exception { // предупреждаем о Exception
+        throw new Exception(); // и кидаем Exception
     }
 }
+
 
 
 
