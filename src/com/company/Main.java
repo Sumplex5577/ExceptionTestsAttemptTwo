@@ -717,12 +717,34 @@ public class Main {
 //        throw new Exception(); // тут ошибка компиляции
 //    }
 //}
-    public static void main(String[] args) throws Exception { // предупреждаем о Exception
-        throw new Exception(); // и кидаем Exception
+// 71   public static void main(String[] args) throws Exception { // предупреждаем о Exception
+//        throw new Exception(); // и кидаем Exception
+//    }
+//}
+// 72   public static void main(String[] args) throws Throwable { // предупреждаем "целом" Throwable
+//        throw new Exception();
+//    }
+//}
+//
+// 73   public static void main(String[] args) throws Exception { // пугаем
+//        // но ничего не бросаем
+//    }
+//}
+// 74   public static void main(String[] args) {
+//        f(); // тут ошибка компиляции
+//    }
+//
+//    public static void f() throws Exception {
+//    }
+//}
+    // они пугают целым Throwable
+    public static void main(String[] args) throws Throwable {
+        f();
+    }
+    // хотя мы пугали всего-лишь Exception
+    public static void f() throws Exception {
     }
 }
-
-
 
 
 
