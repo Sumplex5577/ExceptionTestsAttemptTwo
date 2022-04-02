@@ -529,8 +529,184 @@ public class Main {
 //        }
 //    }
 //}
-
-
+// 54   public static void main(String[] args) {
+//        try {
+//            Runtime.getRuntime().halt(42);
+//        } finally {
+//            System.err.println("finally");
+//        }
+//    }
+//}
+// 55   public static void main(String[] args) {
+//        try {
+//            System.err.println("try");
+//            if (true) {throw new RuntimeException();}
+//        } finally {
+//            System.err.println("finally");
+//        }
+//        System.err.println("more");
+//    }
+//}
+// 56   public static void main(String[] args) {
+//        try {
+//            System.err.println("try");
+//            throw new RuntimeException();
+//        } finally {
+//            System.err.println("finally");
+//        }
+//        System.err.println("more");
+//    }
+//}
+// 57   public static void main(String[] args) {
+//        try {
+//            System.err.println("try");
+//            if (true) {return;}
+//        } finally {
+//            System.err.println("finally");
+//        }
+//        System.err.println("more");
+//    }
+//}
+// 58    public static void main(String[] args) {
+//        System.err.println(f());
+//    }
+//    public static int f() {
+//        try {
+//            return 0;
+//        } finally {
+//            return 1;
+//        }
+//    }
+//}
+// 59   public static void main(String[] args) {
+//        System.err.println(f());
+//    }
+//    public static int f() {
+//        try {
+//            throw new RuntimeException();
+//        } finally {
+//            return 1;
+//        }
+//    }
+//}
+// 60   public static void main(String[] args) {
+//        System.err.println(f());
+//    }
+//    public static int f() {
+//        try {
+//            return 0;
+//        } finally {
+//            throw new RuntimeException();
+//        }
+//    }
+//}
+// 61  public static void main(String[] args) {
+//        System.err.println(f());
+//    }
+//    public static int f() {
+//        try {
+//            throw new Error();
+//        } finally {
+//            throw new RuntimeException();
+//        }
+//    }
+//}
+// 62   public static void main(String[] args) {
+//        System.err.println(f());
+//    }
+//    public static int f() {
+//        long rnd = System.currentTimeMillis();
+//        boolean finished = false;
+//        try {
+//            if (rnd % 3 == 0) {
+//                throw new Error();
+//            } else if (rnd % 3 == 1) {
+//                throw new RuntimeException();
+//            } else {
+//                // nothing
+//            }
+//            finished = true;
+//        } finally {
+//            if (finished) {
+//                // не было исключений
+//            } else {
+//                // было исключение, но какое?
+//            }
+//        }
+//    }
+//}
+// 63   public static void main(String[] args) {
+//        try {
+//            System.err.print(" 0");
+//            // nothing
+//            System.err.print(" 1");
+//        } catch(Error e) {
+//            System.err.print(" 2");
+//        } finally {
+//            System.err.print(" 3");
+//        }
+//        System.err.print(" 4");
+//    }
+//}
+//  64  public static void main(String[] args) {
+//        try {
+//            System.err.print(" 0");
+//            if (true) {throw new Error();}
+//            System.err.print(" 1");
+//        } catch(Error e) {
+//            System.err.print(" 2");
+//        } finally {
+//            System.err.print(" 3");
+//        }
+//        System.err.print(" 4");
+//    }
+//}
+// 65   public static void main(String[] args) {
+//        try {
+//            System.err.print(" 0");
+//            if (true) {throw new RuntimeException();}
+//            System.err.print(" 1");
+//        } catch(Error e) {
+//            System.err.print(" 2");
+//        } finally {
+//            System.err.print(" 3");
+//        }
+//        System.err.print(" 4");
+//    }
+//}
+// 66   public static void main(String[] args) {
+//        if (args.length > 1) {
+//            if (args.length > 2) {
+//                if (args.length > 3) {
+//
+//                }
+//            }
+//        }
+//    }
+//}
+// 67   public static void main(String[] args) {
+//        for (int i = 0; i < 10; i++) {
+//            for (int j = 0; j < 10; i++) {
+//                for (int k = 0; k < 10; k++) {
+//
+//                }
+//            }
+//        }
+//    }
+//}
+// 68   public static void main(String[] args) {
+//        try {
+//            try {
+//                try {
+//
+//                } catch (Exception e) {
+//                } finally {}
+//            } catch (Exception e) {
+//            } finally {}
+//        } catch (Exception e) {
+//        } finally {}
+//    }
+//}
 
 
 
